@@ -6,10 +6,10 @@
   "scripts": {
     "test": "playwright"
   },
-  "author": "",
+  "author": "dremin",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.12.3",
+    "@playwright/test": "^1.59.1",
     "playwright": "^1.12.3"
   }
 }

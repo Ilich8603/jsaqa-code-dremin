@@ -1,29 +1,37 @@
 const sorting = require("../../app");
 
 describe("Books names test suit", () => {
-  it("Books names should be sorted in ascending order", () => {
-    expect(
-      sorting.sortByName([
-        "Гарри Поттер",
-        "Властелин Колец",
-        "Волшебник изумрудного города",
-      ])
-    ).toEqual([
+  test("Books names should be sorted in ascending order", () => {
+    const input = [
+      "Гарри Поттер",
+      "Властелин Колец",
+      "Волшебник изумрудного города",
+    ];
+      
+    const expected = [
       "Властелин Колец",
       "Волшебник изумрудного города",
       "Гарри Поттер",
-    ]);
+    ];
+
+    const output = sorting.sortByName(input);
+
+    expect(output).toEqual(expected)
   });
 
-  it("Books names with same name should remain unchanged", () => {
-    expect(
-      sorting.sortByName([
-        "Гарри Поттер",
-        "гарри поттер",
-      ])
-    ).toEqual([
+  test("Books names with same name should remain unchanged", () => {
+    const input = [
       "Гарри Поттер",
       "гарри поттер",
-    ]);
+    ];
+
+    const expected = [
+      "Гарри Поттер",
+      "гарри поттер",
+    ];
+
+    const output = sorting.sortByName(input);
+
+    expect(output).toEqual(expected);
   });
 });

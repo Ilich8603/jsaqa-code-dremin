@@ -1,5 +1,7 @@
 /node_modules/
-
+.user.js
+user.js
+*.log
 
 .vscode/*
 !.vscode/settings.json
