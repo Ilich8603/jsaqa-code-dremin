@@ -1,21 +1,3 @@
-/*const puppeteer = require('puppeteer');
-
-let browser;
-
-// Общая настройка для всех тестов
-beforeAll(async () => {
-  browser = await puppeteer.launch({
-    headless: false,
-    slowMo: 100,
-  });
-}, 30000);      
-
-
-afterAll(async () => {
-  await browser.close();
-});*/
-
-
 
 describe("Github page tests", () => {
 
